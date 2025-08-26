@@ -36,7 +36,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="bg-gray-100">
       <!-- banner section  -->
 
       <section
@@ -83,7 +83,9 @@
                   <h2 class="text-[#11111180]"><span>150.00 </span> Tk</h2>
 
                   <div class="card-actions">
-                    <button class="btn bg-pink-600 rounded-lg text-white">
+                    <button
+                      class="btn bg-pink-600 rounded-lg text-white btn-wide"
+                    >
                       Add to Cart
                     </button>
                   </div>
@@ -262,9 +264,28 @@
             </div>
           </div>
         </section>
-        <aside class="col-span-3">
-          <div class="bg-white">
-            <h2 class="font-bold">Have a Cupon ?</h2>
+        <aside class="col-span-3 p-6">
+          <div class="bg-white mt-18 p-4 rounded-xl">
+            <h2 class="font-bold py-4">Have a Cupon ?</h2>
+            <div class="join">
+              <input class="input join-item" placeholder="Email" />
+              <button
+                class="border-none btn join-item rounded-r-full bg-pink-600 text-white"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+          <div class="cart-box bg-white mt-10 p-5">
+            <h2>Cart</h2>
+            <div id="cart-container"></div>
+            <div>
+              <h2>Total price: <span id="total-price">0</span> Tk</h2>
+              <h2>Total Quantity: <span id="total-quantity">0</span> Tk</h2>
+              <button class="border-none btn rounded-lg bg-pink-600 text-white">
+                Make Purchase
+              </button>
+            </div>
           </div>
         </aside>
       </section>
